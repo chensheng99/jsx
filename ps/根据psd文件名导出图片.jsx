@@ -22,7 +22,8 @@ function exportJPEG(customFileName) {
         // 设置导出文件的路径
         var saveName = customFileName ? customFileName : subGroupName; // 如果提供了自定义文件名，使用该名称；否则使用子图层组名称
         // alert("图片的名称" + saveName);
-        var savePath = decodeURI(doc.path) + "/" + saveName + ".png"; // 组合路径
+        // var savePath = decodeURI(doc.path) + "/" + saveName + ".png"; // 组合路径
+        var savePath = decodeURI(doc.path) + "/" + saveName + ".jpg"; // 组合路径
         // alert("图片的路径" + savePath);
         var file = new File(savePath); // 创建文件对象
 
